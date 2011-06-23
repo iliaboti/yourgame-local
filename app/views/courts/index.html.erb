@@ -1,0 +1,27 @@
+<h1>Listing courts</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Title</th>
+    <th>Content</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @courts.each do |court| %>
+  <tr>
+    <td><%= court.name %></td>
+    <td><%= court.title %></td>
+    <td><%= court.content %></td>
+    <td><%= link_to 'Show', court %></td>
+    <td><%= link_to 'Edit', edit_court_path(court) %></td>
+    <td><%= link_to 'Destroy', court, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Court', new_court_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  booker: MyString
+  from: 2011-06-22 12:56:51
+  until: 2011-06-22 12:56:51
+  court: 
+
+two:
+  booker: MyString
+  from: 2011-06-22 12:56:51
+  until: 2011-06-22 12:56:51
+  court: 

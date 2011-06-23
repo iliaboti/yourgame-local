@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @court.name %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @court.title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @court.content %>
+</p>
+
+<h2>Bookings</h2>
+<% @court.bookings.each do |booking| %>
+  <p>
+    <b>Booker:</b>
+    <%= booking.booker %>
+  </p>
+ 
+  <p>
+    <b>From:</b>
+    <%= booking.from %>
+  </p>
+
+  <p>
+    <b>Until:</b>
+    <%= booking.until %>
+  </p>
+<% end %>
+
+<h2>Add a booking:</h2>
+<%= form_for([@court, @court.bookings.build]) do |f| %>
+  <div class="field">
+    <%= f.label :booker %><br />
+    <%= f.text_field :booker %>
+  </div>
+  <div class="field">
+    <%= f.label :from %><br />
+    <%= select_date Date.today, :prefix => :from %>
+  </div>
+  <div class="field">
+    <%= f.label :until %><br />
+    <%= select_date Date.today, :prefix => :until %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+
+<%= link_to 'Edit', edit_court_path(@court) %> |
+<%= link_to 'Back', courts_path %>

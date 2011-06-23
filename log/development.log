@@ -1,0 +1,2435 @@
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 21 16:48:59 +0300 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 21 16:49:15 +0300 2011
+
+ArgumentError (missing :action):
+  config/routes.rb:3
+  config/routes.rb:1
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 21 16:49:35 +0300 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 21 17:53:06 +0300 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 98ms (Views: 95.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 21 17:53:09 +0300 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 21 17:53:10 +0300 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 21 17:53:58 +0300 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (25.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (2.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36mSQL (2.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to CreateCourts (20110621145525)
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE TABLE "courts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "title" varchar(255), "content" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110621145525')
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("courts")
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 21 17:59:34 +0300 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 56ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courts" for 127.0.0.1 at Tue Jun 21 17:59:36 +0300 2011
+  Processing by CourtsController#index as HTML
+  [1m[36mCourt Load (19.2ms)[0m  [1mSELECT "courts".* FROM "courts"[0m
+Rendered courts/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 105ms (Views: 12.1ms | ActiveRecord: 19.2ms)
+
+
+Started GET "/courts/new" for 127.0.0.1 at Tue Jun 21 17:59:39 +0300 2011
+  Processing by CourtsController#new as HTML
+Rendered courts/_form.html.erb (224.1ms)
+Rendered courts/new.html.erb within layouts/application (228.3ms)
+Completed 200 OK in 263ms (Views: 249.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courts/new" for 127.0.0.1 at Tue Jun 21 17:59:44 +0300 2011
+  Processing by CourtsController#new as HTML
+Rendered courts/_form.html.erb (9.6ms)
+Rendered courts/new.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 32ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courts/new" for 127.0.0.1 at Tue Jun 21 17:59:47 +0300 2011
+  Processing by CourtsController#new as HTML
+Rendered courts/_form.html.erb (6.0ms)
+Rendered courts/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 17ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/courts" for 127.0.0.1 at Tue Jun 21 18:00:06 +0300 2011
+  Processing by CourtsController#create as HTML
+  Parameters: {"commit"=>"Create Court", "court"=>{"name"=>"Tennis Count 1", "title"=>"Title Tennis Court 1", "content"=>"this is the tennis court 1"}, "authenticity_token"=>"FsorH7rEwBRf2O4JzBsBZP0n1DsvFTGagqW7jPBJ3m8=", "utf8"=>"✓"}
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (32.1ms)[0m  [1mINSERT INTO "courts" ("updated_at", "title", "content", "name", "created_at") VALUES ('2011-06-21 15:00:06.592754', 'Title Tennis Court 1', 'this is the tennis court 1', 'Tennis Count 1', '2011-06-21 15:00:06.592754')[0m
+Redirected to http://localhost:3000/courts/1
+Completed 302 Found in 158ms
+
+
+Started GET "/courts/1" for 127.0.0.1 at Tue Jun 21 18:00:06 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.3ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+Rendered courts/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 75ms (Views: 50.2ms | ActiveRecord: 32.7ms)
+
+
+Started GET "/courts" for 127.0.0.1 at Tue Jun 21 18:00:10 +0300 2011
+  Processing by CourtsController#index as HTML
+  [1m[36mCourt Load (0.3ms)[0m  [1mSELECT "courts".* FROM "courts"[0m
+Rendered courts/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 27ms (Views: 23.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 21 18:01:30 +0300 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 21 18:02:46 +0300 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courts" for 127.0.0.1 at Tue Jun 21 18:04:09 +0300 2011
+  Processing by CourtsController#index as HTML
+  [1m[35mCourt Load (0.3ms)[0m  SELECT "courts".* FROM "courts"
+Rendered courts/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 36ms (Views: 10.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Tue Jun 21 18:04:11 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+Rendered courts/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 14ms (Views: 9.7ms | ActiveRecord: 0.1ms)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateCourts (20110621145525)
+Migrating to CreateCourtBookins (20110621150619)
+  [1m[35mSQL (0.0ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE TABLE "court_bookins" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "booker" varchar(255), "from" date, "until" date, "court_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110621150619')
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("court_bookins")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("courts")[0m
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 21 18:07:36 +0300 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courts" for 127.0.0.1 at Tue Jun 21 18:07:38 +0300 2011
+  Processing by CourtsController#index as HTML
+  [1m[35mCourt Load (0.3ms)[0m  SELECT "courts".* FROM "courts"
+Rendered courts/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 21 18:10:14 +0300 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jun 21 18:13:00 +0300 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courts" for 127.0.0.1 at Tue Jun 21 18:13:01 +0300 2011
+  Processing by CourtsController#index as HTML
+  [1m[36mCourt Load (0.4ms)[0m  [1mSELECT "courts".* FROM "courts"[0m
+Rendered courts/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 59ms (Views: 10.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Tue Jun 21 18:13:03 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+Rendered courts/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 31ms (Views: 10.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/courts" for 127.0.0.1 at Tue Jun 21 18:13:05 +0300 2011
+  Processing by CourtsController#index as HTML
+  [1m[36mCourt Load (0.5ms)[0m  [1mSELECT "courts".* FROM "courts"[0m
+Rendered courts/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 20ms (Views: 10.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/courts" for 127.0.0.1 at Tue Jun 21 18:16:53 +0300 2011
+  Processing by CourtsController#index as HTML
+  [1m[35mCourt Load (0.4ms)[0m  SELECT "courts".* FROM "courts"
+Rendered courts/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 63ms (Views: 33.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/courts" for 127.0.0.1 at Tue Jun 21 18:16:54 +0300 2011
+  Processing by CourtsController#index as HTML
+  [1m[36mCourt Load (0.3ms)[0m  [1mSELECT "courts".* FROM "courts"[0m
+Rendered courts/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 19ms (Views: 13.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/courts" for 127.0.0.1 at Tue Jun 21 18:16:58 +0300 2011
+  Processing by CourtsController#index as HTML
+  [1m[35mCourt Load (0.4ms)[0m  SELECT "courts".* FROM "courts"
+Rendered courts/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 17ms (Views: 11.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Tue Jun 21 18:16:59 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+Rendered courts/show.html.erb within layouts/application (37.1ms)
+Completed 500 Internal Server Error in 94ms
+
+ActionView::Template::Error (undefined method `court_booking' for #<Court:0x104fdceb0>):
+    16: </p>
+    17: 
+    18: <h2>Add a comment:</h2>
+    19: <%= form_for([@court, @court.court_booking.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2189341740_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.4ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Tue Jun 21 18:17:19 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+Rendered courts/show.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined method `court_bookin' for #<Court:0x104d89c30>):
+    16: </p>
+    17: 
+    18: <h2>Add a comment:</h2>
+    19: <%= form_for([@court, @court.court_bookin.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2188122860_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.5ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Tue Jun 21 18:17:20 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.2ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+Rendered courts/show.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 68ms
+
+ActionView::Template::Error (undefined method `court_bookin' for #<Court:0x104bd8328>):
+    16: </p>
+    17: 
+    18: <h2>Add a comment:</h2>
+    19: <%= form_for([@court, @court.court_bookin.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2187234920_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.6ms)
+
+
+Started GET "/courts" for 127.0.0.1 at Tue Jun 21 18:17:27 +0300 2011
+  Processing by CourtsController#index as HTML
+  [1m[35mCourt Load (0.3ms)[0m  SELECT "courts".* FROM "courts"
+Rendered courts/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 17ms (Views: 10.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Tue Jun 21 18:17:29 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+Rendered courts/show.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `court_bookin' for #<Court:0x104d53cc0>):
+    16: </p>
+    17: 
+    18: <h2>Add a comment:</h2>
+    19: <%= form_for([@court, @court.court_bookin.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2188012340_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.8ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Tue Jun 21 18:17:55 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+Rendered courts/show.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 61ms
+
+ActionView::Template::Error (undefined method `court_bookin' for #<Court:0x104fd5840>):
+    16: </p>
+    17: 
+    18: <h2>Add a comment:</h2>
+    19: <%= form_for([@court, @court.court_bookin.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2189326580_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.9ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Tue Jun 21 18:17:56 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+Rendered courts/show.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `court_bookin' for #<Court:0x104d82f98>):
+    16: </p>
+    17: 
+    18: <h2>Add a comment:</h2>
+    19: <%= form_for([@court, @court.court_bookin.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2188108960_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.6ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Tue Jun 21 18:17:58 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+Rendered courts/show.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `court_bookin' for #<Court:0x104bb38c0>):
+    16: </p>
+    17: 
+    18: <h2>Add a comment:</h2>
+    19: <%= form_for([@court, @court.court_bookin.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2187159860_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.4ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Tue Jun 21 18:17:59 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+Rendered courts/show.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined method `court_bookin' for #<Court:0x104e60ed8>):
+    16: </p>
+    17: 
+    18: <h2>Add a comment:</h2>
+    19: <%= form_for([@court, @court.court_bookin.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2188562600_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.8ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Tue Jun 21 18:18:33 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+Rendered courts/show.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined method `court_bookins' for #<Court:0x104c897b8>):
+    16: </p>
+    17: 
+    18: <h2>Add a booking:</h2>
+    19: <%= form_for([@court, @court.court_bookins.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2187597960_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (26.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 22 11:55:39 +0300 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 97ms (Views: 96.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courts" for 127.0.0.1 at Wed Jun 22 11:55:45 +0300 2011
+  Processing by CourtsController#index as HTML
+  [1m[36mCourt Load (0.4ms)[0m  [1mSELECT "courts".* FROM "courts"[0m
+Rendered courts/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 36ms (Views: 12.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 11:55:48 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+Rendered courts/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 38ms
+
+ActionView::Template::Error (undefined method `court_bookins' for #<Court:0x104ced628>):
+    16: </p>
+    17: 
+    18: <h2>Add a booking:</h2>
+    19: <%= form_for([@court, @court.court_bookins.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2187802580_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.0ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 11:57:30 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+Rendered courts/show.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined method `CourtBookins' for #<Court:0x104e7cc78>):
+    16: </p>
+    17: 
+    18: <h2>Add a booking:</h2>
+    19: <%= form_for([@court, @court.CourtBookins.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2188600540_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.7ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 11:57:38 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.2ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+Rendered courts/show.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `CourtBookin' for #<Court:0x104c6d950>):
+    16: </p>
+    17: 
+    18: <h2>Add a booking:</h2>
+    19: <%= form_for([@court, @court.CourtBookin.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2187540820_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (19.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (24.7ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 11:59:58 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+Rendered courts/show.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined method `court_bookins' for #<Court:0x104f34990>):
+    16: </p>
+    17: 
+    18: <h2>Add a booking:</h2>
+    19: <%= form_for([@court, @court.court_bookins.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2188982740_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.4ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 11:59:59 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+Rendered courts/show.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined method `court_bookins' for #<Court:0x104d06b28>):
+    16: </p>
+    17: 
+    18: <h2>Add a booking:</h2>
+    19: <%= form_for([@court, @court.court_bookins.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2187849320_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.0ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:00:00 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+Rendered courts/show.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 65ms
+
+ActionView::Template::Error (undefined method `court_bookins' for #<Court:0x104fd5520>):
+    16: </p>
+    17: 
+    18: <h2>Add a booking:</h2>
+    19: <%= form_for([@court, @court.court_bookins.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2189326140_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.7ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:00:01 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+Rendered courts/show.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `court_bookins' for #<Court:0x104d854f0>):
+    16: </p>
+    17: 
+    18: <h2>Add a booking:</h2>
+    19: <%= form_for([@court, @court.court_bookins.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2188113600_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.5ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:00:01 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.2ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+Rendered courts/show.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 56ms
+
+ActionView::Template::Error (undefined method `court_bookins' for #<Court:0x104bbdb18>):
+    16: </p>
+    17: 
+    18: <h2>Add a booking:</h2>
+    19: <%= form_for([@court, @court.court_bookins.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2187180580_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.0ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:00:01 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.2ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+Rendered courts/show.html.erb within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (undefined method `court_bookins' for #<Court:0x104e7f248>):
+    16: </p>
+    17: 
+    18: <h2>Add a booking:</h2>
+    19: <%= form_for([@court, @court.court_bookins.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2188603000_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.4ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:00:21 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+Rendered courts/show.html.erb within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (undefined method `booker' for #<Court:0x104c985d8>):
+    19: <%= form_for([@court]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+    23:   </div>
+    24:   <div class="field">
+    25:     <%= f.label :from %><br />
+  app/views/courts/show.html.erb:22:in `_app_views_courts_show_html_erb___1151859072_2187624660_0'
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2187624660_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (57.2ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:01:14 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.2ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+Rendered courts/show.html.erb within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (undefined method `court_bookins' for #<Court:0x104f271f0>):
+    16: </p>
+    17: 
+    18: <h2>Add a booking:</h2>
+    19: <%= form_for([@court.court_bookins.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2188928780_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.7ms)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateCourts (20110621145525)
+Migrating to CreateCourtBookins (20110621150619)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("court_bookins")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("courts")[0m
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:04:56 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+Rendered courts/show.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `court_bookins' for #<Court:0x104cfd618>):
+    16: </p>
+    17: 
+    18: <h2>Add a booking:</h2>
+    19: <%= form_for([@court, @court.court_bookins.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2187835300_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.3ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:05:14 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+Rendered courts/show.html.erb within layouts/application (33.2ms)
+Completed 500 Internal Server Error in 93ms
+
+ActionView::Template::Error (undefined method `court_court_bookins_path' for #<#<Class:0x104fc8668>:0x104fc6980>):
+    16: </p>
+    17: 
+    18: <h2>Add a booking:</h2>
+    19: <%= form_for([@court, @court.court_bookins.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2189305620_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.9ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:05:34 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+Rendered courts/show.html.erb within layouts/application (62.3ms)
+Completed 500 Internal Server Error in 74ms
+
+ActionView::Template::Error (undefined method `court_court_bookins_path' for #<#<Class:0x104cfdc30>:0x104cfbc50>):
+    16: </p>
+    17: 
+    18: <h2>Add a booking:</h2>
+    19: <%= form_for([@court, @court.court_bookins.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2187841220_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.1ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:05:41 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+Rendered courts/show.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined method `court_bookins' for #<Court:0x104da5f48>):
+    16: </p>
+    17: 
+    18: <h2>Add a booking:</h2>
+    19: <%= form_for([@court, @court.court_bookins.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2188173700_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.9ms)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateCourts (20110621145525)
+Migrating to CreateCourtBookins (20110621150619)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("court_bookins")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("courts")[0m
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:05:55 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+Rendered courts/show.html.erb within layouts/application (72.2ms)
+Completed 500 Internal Server Error in 86ms
+
+ActionView::Template::Error (undefined method `court_court_bookins_path' for #<#<Class:0x104bd27c0>:0x104bd0b00>):
+    16: </p>
+    17: 
+    18: <h2>Add a booking:</h2>
+    19: <%= form_for([@court, @court.court_bookins.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2187229140_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.7ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:05:56 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+Rendered courts/show.html.erb within layouts/application (19.2ms)
+Completed 500 Internal Server Error in 30ms
+
+ActionView::Template::Error (undefined method `court_court_bookins_path' for #<#<Class:0x104d7d4d0>:0x104d7aaa0>):
+    16: </p>
+    17: 
+    18: <h2>Add a booking:</h2>
+    19: <%= form_for([@court, @court.court_bookins.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2188099480_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.7ms)
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateCourts (20110621145525)
+Migrating to CreateCourtBookins (20110621150619)
+Migrating to CreateBookings (20110622090622)
+  [1m[35mSQL (0.5ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (11.3ms)[0m  [1mCREATE TABLE "bookings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "booker" varchar(255), "from" date, "until" date, "court_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110622090622')
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("bookings")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("court_bookins")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("courts")
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:06:51 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+Rendered courts/show.html.erb within layouts/application (19.6ms)
+Completed 500 Internal Server Error in 32ms
+
+ActionView::Template::Error (undefined method `court_bookings_path' for #<#<Class:0x104f41a28>:0x104f3fd68>):
+    16: </p>
+    17: 
+    18: <h2>Add a booking:</h2>
+    19: <%= form_for([@court, @court.bookings.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2189029620_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.3ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:08:04 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.2ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+Rendered courts/show.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `bookings' for #<Court:0x104c853e8>):
+    16: </p>
+    17: 
+    18: <h2>Add a booking:</h2>
+    19: <%= form_for([@court, @court.bookings.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2187589280_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (53.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (58.3ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:08:14 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+Rendered courts/show.html.erb within layouts/application (29.5ms)
+Completed 500 Internal Server Error in 42ms
+
+ActionView::Template::Error (undefined method `court_bookings_path' for #<#<Class:0x104eceac8>:0x104ecccc8>):
+    16: </p>
+    17: 
+    18: <h2>Add a booking:</h2>
+    19: <%= form_for([@court, @court.bookings.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2188793980_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.6ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:10:05 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mBooking Load (0.2ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)[0m
+Rendered courts/show.html.erb within layouts/application (56.8ms)
+Completed 500 Internal Server Error in 68ms
+
+ActionView::Template::Error (undefined method `model_name' for Array:Class):
+    16: </p>
+    17: 
+    18: <h2>Add a booking:</h2>
+    19: <%= form_for([@court, @court.bookings]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2187490360_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.2ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:10:15 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+Rendered courts/show.html.erb within layouts/application (19.7ms)
+Completed 500 Internal Server Error in 31ms
+
+ActionView::Template::Error (undefined method `court_bookings_path' for #<#<Class:0x104d7b928>:0x104d79c40>):
+    16: </p>
+    17: 
+    18: <h2>Add a booking:</h2>
+    19: <%= form_for([@court, @court.bookings.build]) do |f| %>
+    20:   <div class="field">
+    21:     <%= f.label :booker %><br />
+    22:     <%= f.text_field :booker %>
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2188099700_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.3ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:12:27 +0300 2011
+
+SyntaxError (/Users/iliaboti/src/rubby/yourgame/config/routes.rb:66: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.3ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:12:50 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.2ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+Rendered courts/show.html.erb within layouts/application (27.2ms)
+Completed 500 Internal Server Error in 41ms
+
+ActionView::Template::Error (undefined method `date_field' for #<ActionView::Helpers::FormBuilder:0x104cff1e8>):
+    23:   </div>
+    24:   <div class="field">
+    25:     <%= f.label :from %><br />
+    26:     <%= f.date_field :from %>
+    27:   </div>
+    28:   <div class="field">
+    29:     <%= f.label :until %><br />
+  app/views/courts/show.html.erb:26:in `_app_views_courts_show_html_erb___1151859072_2188103820_0'
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2188103820_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.8ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:15:42 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.2ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+Rendered courts/show.html.erb within layouts/application (27.4ms)
+Completed 500 Internal Server Error in 41ms
+
+ActionView::Template::Error (undefined method `select_date' for #<ActionView::Helpers::FormBuilder:0x104e9aa20>):
+    23:   </div>
+    24:   <div class="field">
+    25:     <%= f.label :from %><br />
+    26:     <%= f.select_date Date.today :from %>
+    27:   </div>
+    28:   <div class="field">
+    29:     <%= f.label :until %><br />
+  app/views/courts/show.html.erb:26:in `_app_views_courts_show_html_erb___1151859072_2189185280_0'
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2189185280_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.8ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:16:58 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.2ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+Rendered courts/show.html.erb within layouts/application (62.6ms)
+Completed 500 Internal Server Error in 74ms
+
+ActionView::Template::Error (undefined method `merge' for "written_on":String):
+    23:   </div>
+    24:   <div class="field">
+    25:     <%= f.label :from %><br />
+    26:     <%= f.date_select("post", "written_on", :start_year => 1995) %>
+    27:   </div>
+    28:   <div class="field">
+    29:     <%= f.label :until %><br />
+  app/views/courts/show.html.erb:26:in `_app_views_courts_show_html_erb___1151859072_2187640500_0'
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2187640500_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (26.7ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:18:26 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+Rendered courts/show.html.erb within layouts/application (20.4ms)
+Completed 500 Internal Server Error in 32ms
+
+ActionView::Template::Error (undefined method `select_datetime' for #<ActionView::Helpers::FormBuilder:0x104cdac08>):
+    23:   </div>
+    24:   <div class="field">
+    25:     <%= f.label :from %><br />
+    26:     <%= f.select_datetime(DateTime.now, :prompt => "Choose date and time") %>
+    27:   </div>
+    28:   <div class="field">
+    29:     <%= f.label :until %><br />
+  app/views/courts/show.html.erb:26:in `_app_views_courts_show_html_erb___1151859072_2188044260_0'
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2188044260_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.7ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:19:02 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+Rendered courts/show.html.erb within layouts/application (25.3ms)
+Completed 500 Internal Server Error in 37ms
+
+ActionView::Template::Error (undefined method `date_field' for #<ActionView::Helpers::FormBuilder:0x104ea34e0>):
+    27:   </div>
+    28:   <div class="field">
+    29:     <%= f.label :until %><br />
+    30:     <%= f.date_field :until %>
+    31:   </div>
+    32:   <div class="actions">
+    33:     <%= f.submit %>
+  app/views/courts/show.html.erb:30:in `_app_views_courts_show_html_erb___1151859072_2189212960_0'
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2189212960_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.2ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:19:27 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+Rendered courts/show.html.erb within layouts/application (85.8ms)
+Completed 200 OK in 99ms (Views: 91.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/courts/1/bookings" for 127.0.0.1 at Wed Jun 22 12:19:54 +0300 2011
+
+ActionController::RoutingError (uninitialized constant BookingsController):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:20:21 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.2ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+Rendered courts/show.html.erb within layouts/application (80.7ms)
+Completed 500 Internal Server Error in 92ms
+
+ActionView::Template::Error (undefined method `select_datetime' for #<ActionView::Helpers::FormBuilder:0x104c7a178>):
+    23:   </div>
+    24:   <div class="field">
+    25:     <%= f.label :from %><br />
+    26:     <%= f.select_datetime(DateTime.now, :prompt => "Choose date and time") %>
+    27:   </div>
+    28:   <div class="field">
+    29:     <%= f.label :until %><br />
+  app/views/courts/show.html.erb:26:in `_app_views_courts_show_html_erb___1151859072_2187848920_0'
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2187848920_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.1ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:36:27 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.2ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+Rendered courts/show.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 73ms (Views: 48.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:36:33 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.2ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+Rendered courts/show.html.erb within layouts/application (32.7ms)
+Completed 200 OK in 49ms (Views: 38.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courts/1/edit" for 127.0.0.1 at Wed Jun 22 12:37:30 +0300 2011
+  Processing by CourtsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+Rendered courts/_form.html.erb (6.9ms)
+Rendered courts/edit.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 38ms (Views: 31.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/courts/1/bookings" for 127.0.0.1 at Wed Jun 22 12:37:35 +0300 2011
+
+ActionController::RoutingError (uninitialized constant BookingsController):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started POST "/courts/1/bookings" for 127.0.0.1 at Wed Jun 22 12:39:49 +0300 2011
+
+AbstractController::ActionNotFound (The action 'create' could not be found for BookingsController):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started POST "/courts/1/bookings" for 127.0.0.1 at Wed Jun 22 12:40:04 +0300 2011
+  Processing by BookingsController#create as HTML
+  Parameters: {"commit"=>"Create Booking", "authenticity_token"=>"FsorH7rEwBRf2O4JzBsBZP0n1DsvFTGagqW7jPBJ3m8=", "utf8"=>"✓", "date"=>{"minute"=>"42", "month"=>"6", "hour"=>"12", "day"=>"22", "year"=>"2011"}, "booking"=>{"booker"=>"Liabotis"}, "court_id"=>"1"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant BookingsController::Post):
+  app/controllers/bookings_controller.rb:3:in `create'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.4ms)
+
+
+Started POST "/courts/1/bookings" for 127.0.0.1 at Wed Jun 22 12:40:55 +0300 2011
+  Processing by BookingsController#create as HTML
+  Parameters: {"commit"=>"Create Booking", "authenticity_token"=>"FsorH7rEwBRf2O4JzBsBZP0n1DsvFTGagqW7jPBJ3m8=", "utf8"=>"✓", "date"=>{"minute"=>"42", "month"=>"6", "hour"=>"12", "day"=>"22", "year"=>"2011"}, "booking"=>{"booker"=>"Liabotis"}, "court_id"=>"1"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant BookingsController::Post):
+  app/controllers/bookings_controller.rb:3:in `create'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.5ms)
+
+
+Started POST "/courts/1/bookings" for 127.0.0.1 at Wed Jun 22 12:41:00 +0300 2011
+  Processing by BookingsController#create as HTML
+  Parameters: {"commit"=>"Create Booking", "authenticity_token"=>"FsorH7rEwBRf2O4JzBsBZP0n1DsvFTGagqW7jPBJ3m8=", "utf8"=>"✓", "date"=>{"minute"=>"42", "month"=>"6", "hour"=>"12", "day"=>"22", "year"=>"2011"}, "booking"=>{"booker"=>"Liabotis"}, "court_id"=>"1"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant BookingsController::Post):
+  app/controllers/bookings_controller.rb:3:in `create'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (54.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (59.5ms)
+
+
+Started POST "/courts/1/bookings" for 127.0.0.1 at Wed Jun 22 12:42:22 +0300 2011
+  Processing by BookingsController#create as HTML
+  Parameters: {"commit"=>"Create Booking", "authenticity_token"=>"FsorH7rEwBRf2O4JzBsBZP0n1DsvFTGagqW7jPBJ3m8=", "utf8"=>"✓", "date"=>{"minute"=>"42", "month"=>"6", "hour"=>"12", "day"=>"22", "year"=>"2011"}, "booking"=>{"booker"=>"Liabotis"}, "court_id"=>"1"}
+  [1m[36mCourt Load (0.2ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "bookings" ("booker", "from", "until", "court_id", "updated_at", "created_at") VALUES ('Liabotis', NULL, NULL, 1, '2011-06-22 09:42:22.721675', '2011-06-22 09:42:22.721675')[0m
+Redirected to http://localhost:3000/courts/1
+Completed 302 Found in 34ms
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:42:22 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.3ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+Rendered courts/show.html.erb within layouts/application (34.5ms)
+Completed 200 OK in 49ms (Views: 40.6ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/courts/1/bookings" for 127.0.0.1 at Wed Jun 22 12:42:31 +0300 2011
+  Processing by BookingsController#create as HTML
+  Parameters: {"commit"=>"Create Booking", "authenticity_token"=>"FsorH7rEwBRf2O4JzBsBZP0n1DsvFTGagqW7jPBJ3m8=", "utf8"=>"✓", "date"=>{"minute"=>"44", "month"=>"6", "hour"=>"12", "day"=>"22", "year"=>"2011"}, "booking"=>{"booker"=>"Liabotis"}, "court_id"=>"1"}
+  [1m[36mCourt Load (0.2ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "bookings" ("booker", "until", "updated_at", "court_id", "from", "created_at") VALUES ('Liabotis', NULL, '2011-06-22 09:42:31.481547', 1, NULL, '2011-06-22 09:42:31.481547')[0m
+Redirected to http://localhost:3000/courts/1
+Completed 302 Found in 28ms
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:42:31 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.2ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+Rendered courts/show.html.erb within layouts/application (80.3ms)
+Completed 200 OK in 99ms (Views: 87.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/courts" for 127.0.0.1 at Wed Jun 22 12:42:39 +0300 2011
+  Processing by CourtsController#index as HTML
+  [1m[36mCourt Load (0.4ms)[0m  [1mSELECT "courts".* FROM "courts"[0m
+Rendered courts/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 31ms (Views: 24.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:42:41 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+Rendered courts/show.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 37ms (Views: 30.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:44:26 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+  [1m[35mBooking Load (0.3ms)[0m  SELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)
+Rendered courts/show.html.erb within layouts/application (13.3ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (undefined method `form' for #<Booking:0x104f36998>):
+    24:  
+    25:   <p>
+    26:     <b>From:</b>
+    27:     <%= booking.form %>
+    28:   </p>
+    29: 
+    30:   <p>
+  app/views/courts/show.html.erb:27:in `_app_views_courts_show_html_erb___1151859072_2189286320_0'
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2189286320_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.9ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:44:54 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+  [1m[35mBooking Load (0.3ms)[0m  SELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)
+Rendered courts/show.html.erb within layouts/application (29.1ms)
+Completed 200 OK in 40ms (Views: 33.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/courts/1/bookings" for 127.0.0.1 at Wed Jun 22 12:47:13 +0300 2011
+  Processing by BookingsController#create as HTML
+  Parameters: {"commit"=>"Create Booking", "authenticity_token"=>"FsorH7rEwBRf2O4JzBsBZP0n1DsvFTGagqW7jPBJ3m8=", "utf8"=>"✓", "date"=>{"minute"=>"44", "month"=>"6", "hour"=>"12", "day"=>"22", "year"=>"2011"}, "booking"=>{"booker"=>""}, "court_id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "bookings" ("from", "updated_at", "until", "created_at", "booker", "court_id") VALUES (NULL, '2011-06-22 09:47:13.947332', NULL, '2011-06-22 09:47:13.947332', '', 1)[0m
+Redirected to http://localhost:3000/courts/1
+Completed 302 Found in 23ms
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:47:13 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mBooking Load (0.4ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)[0m
+Rendered courts/show.html.erb within layouts/application (80.0ms)
+Completed 500 Internal Server Error in 92ms
+
+ActionView::Template::Error (undefined method `Date' for #<ActionView::Helpers::FormBuilder:0x104fd4bc0>):
+    42:   <div class="field">
+    43:     <%= f.label :from %><br />
+    44:     <%= select_datetime(DateTime.now, :prompt => "Choose from date and time") %>
+    45:     <%= f.Date.civil(params[:start_date][:year].to_i, params[:start_date][:month].to_i, params[:start_date][:day].to_i) %>
+    46:   </div>
+    47:   <div class="field">
+    48:     <%= f.label :until %><br />
+  app/views/courts/show.html.erb:45:in `_app_views_courts_show_html_erb___1151859072_2187767500_0'
+  app/views/courts/show.html.erb:37:in `_app_views_courts_show_html_erb___1151859072_2187767500_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.1ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:51:45 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.2ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mBooking Load (0.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)[0m
+Rendered courts/show.html.erb within layouts/application (16.7ms)
+Completed 500 Internal Server Error in 29ms
+
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    24:  
+    25:   <p>
+    26:     <b>From:</b>
+    27:     <%= booking.from.strftime("%I:%M %p %d-%b-%y") %>
+    28:   </p>
+    29: 
+    30:   <p>
+  app/views/courts/show.html.erb:27:in `_app_views_courts_show_html_erb___1151859072_2187905460_0'
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2187905460_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.2ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:51:50 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.2ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mBooking Load (0.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)[0m
+Rendered courts/show.html.erb within layouts/application (15.3ms)
+Completed 500 Internal Server Error in 28ms
+
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    24:  
+    25:   <p>
+    26:     <b>From:</b>
+    27:     <%= booking.from.strftime("%I:%M %p %d-%b-%y") %>
+    28:   </p>
+    29: 
+    30:   <p>
+  app/views/courts/show.html.erb:27:in `_app_views_courts_show_html_erb___1151859072_2189136720_0'
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2189136720_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.4ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:52:13 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mBooking Load (0.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)[0m
+Rendered courts/show.html.erb within layouts/application (16.5ms)
+Completed 500 Internal Server Error in 28ms
+
+ActionView::Template::Error (undefined method `strftime' for "Liabotis":String):
+    19: <% @court.bookings.each do |booking| %>
+    20:   <p>
+    21:     <b>Booker:</b>
+    22:     <%= booking.booker.strftime("%I:%M %p %d-%b-%y") %>
+    23:   </p>
+    24:  
+    25:   <p>
+  app/views/courts/show.html.erb:22:in `_app_views_courts_show_html_erb___1151859072_2187663140_0'
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2187663140_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (54.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (58.8ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:52:28 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.2ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mBooking Load (0.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)[0m
+Rendered courts/show.html.erb within layouts/application (14.7ms)
+Completed 500 Internal Server Error in 49ms
+
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    24:  
+    25:   <p>
+    26:     <b>From:</b>
+    27:     <%= booking.from.strftime("%I:%M %p %d-%b-%y") %>
+    28:   </p>
+    29: 
+    30:   <p>
+  app/views/courts/show.html.erb:27:in `_app_views_courts_show_html_erb___1151859072_2188725480_0'
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2188725480_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.5ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:54:57 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.2ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mBooking Load (0.4ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)[0m
+Rendered courts/show.html.erb within layouts/application (68.6ms)
+Completed 500 Internal Server Error in 81ms
+
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    24:  
+    25:   <p>
+    26:     <b>From:</b>
+    27:     <%= booking.from.strftime("%I:%M %p %d-%b-%y") %>
+    28:   </p>
+    29: 
+    30:   <p>
+  app/views/courts/show.html.erb:27:in `_app_views_courts_show_html_erb___1151859072_2187477240_0'
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2187477240_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.5ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:55:02 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mBooking Load (0.4ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)[0m
+Rendered courts/show.html.erb within layouts/application (19.3ms)
+Completed 500 Internal Server Error in 32ms
+
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    24:  
+    25:   <p>
+    26:     <b>From:</b>
+    27:     <%= booking.from.strftime("%I:%M %p %d-%b-%y") %>
+    28:   </p>
+    29: 
+    30:   <p>
+  app/views/courts/show.html.erb:27:in `_app_views_courts_show_html_erb___1151859072_2188074080_0'
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2188074080_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.2ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:55:03 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.2ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mBooking Load (0.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)[0m
+Rendered courts/show.html.erb within layouts/application (18.3ms)
+Completed 500 Internal Server Error in 88ms
+
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    24:  
+    25:   <p>
+    26:     <b>From:</b>
+    27:     <%= booking.from.strftime("%I:%M %p %d-%b-%y") %>
+    28:   </p>
+    29: 
+    30:   <p>
+  app/views/courts/show.html.erb:27:in `_app_views_courts_show_html_erb___1151859072_2189412300_0'
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2189412300_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.5ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:55:06 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.2ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mBooking Load (0.6ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)[0m
+Rendered courts/show.html.erb within layouts/application (18.8ms)
+Completed 500 Internal Server Error in 34ms
+
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    24:  
+    25:   <p>
+    26:     <b>From:</b>
+    27:     <%= booking.from.strftime("%I:%M %p %d-%b-%y") %>
+    28:   </p>
+    29: 
+    30:   <p>
+  app/views/courts/show.html.erb:27:in `_app_views_courts_show_html_erb___1151859072_2187913580_0'
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2187913580_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.6ms)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateCourts (20110621145525)
+Migrating to CreateCourtBookins (20110621150619)
+Migrating to CreateBookings (20110622090622)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("bookings")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("court_bookins")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("courts")
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:55:15 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.2ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mBooking Load (0.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)[0m
+Rendered courts/show.html.erb within layouts/application (13.8ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    24:  
+    25:   <p>
+    26:     <b>From:</b>
+    27:     <%= booking.from.strftime("%I:%M %p %d-%b-%y") %>
+    28:   </p>
+    29: 
+    30:   <p>
+  app/views/courts/show.html.erb:27:in `_app_views_courts_show_html_erb___1151859072_2189167020_0'
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2189167020_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.2ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:55:16 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.2ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mBooking Load (0.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)[0m
+Rendered courts/show.html.erb within layouts/application (18.6ms)
+Completed 500 Internal Server Error in 36ms
+
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    24:  
+    25:   <p>
+    26:     <b>From:</b>
+    27:     <%= booking.from.strftime("%I:%M %p %d-%b-%y") %>
+    28:   </p>
+    29: 
+    30:   <p>
+  app/views/courts/show.html.erb:27:in `_app_views_courts_show_html_erb___1151859072_2187681160_0'
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2187681160_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (55.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (61.4ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:55:16 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mBooking Load (0.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)[0m
+Rendered courts/show.html.erb within layouts/application (14.8ms)
+Completed 500 Internal Server Error in 28ms
+
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    24:  
+    25:   <p>
+    26:     <b>From:</b>
+    27:     <%= booking.from.strftime("%I:%M %p %d-%b-%y") %>
+    28:   </p>
+    29: 
+    30:   <p>
+  app/views/courts/show.html.erb:27:in `_app_views_courts_show_html_erb___1151859072_2188746880_0'
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2188746880_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.1ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:55:17 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mBooking Load (0.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)[0m
+Rendered courts/show.html.erb within layouts/application (63.4ms)
+Completed 500 Internal Server Error in 90ms
+
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    24:  
+    25:   <p>
+    26:     <b>From:</b>
+    27:     <%= booking.from.strftime("%I:%M %p %d-%b-%y") %>
+    28:   </p>
+    29: 
+    30:   <p>
+  app/views/courts/show.html.erb:27:in `_app_views_courts_show_html_erb___1151859072_2187496680_0'
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2187496680_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.8ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 12:55:18 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.2ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mBooking Load (0.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)[0m
+Rendered courts/show.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    24:  
+    25:   <p>
+    26:     <b>From:</b>
+    27:     <%= booking.from.strftime("%I:%M %p %d-%b-%y") %>
+    28:   </p>
+    29: 
+    30:   <p>
+  app/views/courts/show.html.erb:27:in `_app_views_courts_show_html_erb___1151859072_2188091020_0'
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2188091020_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.5ms)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateCourts (20110621145525)
+Migrating to CreateCourtBookins (20110621150619)
+Migrating to CreateBookings (20110622090622)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("bookings")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("court_bookins")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("courts")
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateCourts (20110621145525)
+Migrating to CreateCourtBookins (20110621150619)
+Migrating to CreateBookings (20110622090622)
+  [1m[35mSQL (0.2ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("bookings")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("court_bookins")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("courts")
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 13:07:45 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mBooking Load (0.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)[0m
+Rendered courts/show.html.erb within layouts/application (14.8ms)
+Completed 500 Internal Server Error in 76ms
+
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    24:  
+    25:   <p>
+    26:     <b>From:</b>
+    27:     <%= booking.from.strftime("%I:%M %p %d-%b-%y") %>
+    28:   </p>
+    29: 
+    30:   <p>
+  app/views/courts/show.html.erb:27:in `_app_views_courts_show_html_erb___1151859072_2187270440_0'
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2187270440_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.8ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 13:07:47 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mBooking Load (0.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)[0m
+Rendered courts/show.html.erb within layouts/application (15.8ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    24:  
+    25:   <p>
+    26:     <b>From:</b>
+    27:     <%= booking.from.strftime("%I:%M %p %d-%b-%y") %>
+    28:   </p>
+    29: 
+    30:   <p>
+  app/views/courts/show.html.erb:27:in `_app_views_courts_show_html_erb___1151859072_2187920680_0'
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2187920680_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.4ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 13:07:47 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.2ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mBooking Load (0.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)[0m
+Rendered courts/show.html.erb within layouts/application (13.7ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    24:  
+    25:   <p>
+    26:     <b>From:</b>
+    27:     <%= booking.from.strftime("%I:%M %p %d-%b-%y") %>
+    28:   </p>
+    29: 
+    30:   <p>
+  app/views/courts/show.html.erb:27:in `_app_views_courts_show_html_erb___1151859072_2189226180_0'
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2189226180_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.5ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 13:07:53 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mBooking Load (0.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)[0m
+Rendered courts/show.html.erb within layouts/application (14.4ms)
+Completed 500 Internal Server Error in 26ms
+
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    24:  
+    25:   <p>
+    26:     <b>From:</b>
+    27:     <%= booking.from.strftime("%I:%M %p %d-%b-%y") %>
+    28:   </p>
+    29: 
+    30:   <p>
+  app/views/courts/show.html.erb:27:in `_app_views_courts_show_html_erb___1151859072_2187740980_0'
+  app/views/courts/show.html.erb:19:in `_app_views_courts_show_html_erb___1151859072_2187740980_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (54.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (58.9ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 13:08:14 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.2ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mBooking Load (0.6ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)[0m
+Rendered courts/show.html.erb within layouts/application (31.5ms)
+Completed 200 OK in 47ms (Views: 37.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/courts/1/bookings" for 127.0.0.1 at Wed Jun 22 13:08:19 +0300 2011
+  Processing by BookingsController#create as HTML
+  Parameters: {"commit"=>"Create Booking", "authenticity_token"=>"FsorH7rEwBRf2O4JzBsBZP0n1DsvFTGagqW7jPBJ3m8=", "utf8"=>"✓", "date"=>{"minute"=>"08", "month"=>"6", "hour"=>"13", "day"=>"22", "year"=>"2011"}, "booking"=>{"booker"=>"jlkjljkl;jkjkl"}, "court_id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "bookings" ("from", "booker", "updated_at", "court_id", "until", "created_at") VALUES (NULL, 'jlkjljkl;jkjkl', '2011-06-22 10:08:19.713870', 1, NULL, '2011-06-22 10:08:19.713870')
+Redirected to http://localhost:3000/courts/1
+Completed 302 Found in 69ms
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 13:08:19 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.2ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+  [1m[35mBooking Load (0.3ms)[0m  SELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)
+Rendered courts/show.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 43ms (Views: 35.5ms | ActiveRecord: 1.1ms)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateCourts (20110621145525)
+Migrating to CreateCourtBookins (20110621150619)
+Migrating to CreateBookings (20110622090622)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("bookings")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("court_bookins")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("courts")
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateCourts (20110621145525)
+Migrating to CreateCourtBookins (20110621150619)
+Migrating to CreateBookings (20110622090622)
+Migrating to ChangeDateFormatInMyTable (20110622101654)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateCourts (20110621145525)
+Migrating to CreateCourtBookins (20110621150619)
+Migrating to CreateBookings (20110622090622)
+Migrating to ChangeDateFormatInMyTable (20110622101654)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.8ms)[0m  [1mCREATE TEMPORARY TABLE "altered_bookings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "booker" varchar(255), "from" date, "until" date, "court_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("bookings")
+  [1m[36mSQL (0.4ms)[0m  [1mDROP TABLE "bookings"[0m
+  [1m[35mSQL (0.2ms)[0m  CREATE TABLE "bookings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "booker" varchar(255), "from" datetime, "until" date, "court_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("altered_bookings")[0m
+  [1m[35mSQL (0.4ms)[0m  DROP TABLE "altered_bookings"
+  [1m[36mSQL (0.2ms)[0m  [1mCREATE TEMPORARY TABLE "altered_bookings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "booker" varchar(255), "from" datetime, "until" date, "court_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("bookings")
+  [1m[36mSQL (0.3ms)[0m  [1mDROP TABLE "bookings"[0m
+  [1m[35mSQL (0.2ms)[0m  CREATE TABLE "bookings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "booker" varchar(255), "from" datetime, "until" datetime, "court_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("altered_bookings")[0m
+  [1m[35mSQL (0.1ms)[0m  DROP TABLE "altered_bookings"
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20110622101654')[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("bookings")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("court_bookins")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("courts")[0m
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 13:19:26 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+  [1m[35mBooking Load (0.3ms)[0m  SELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)
+Rendered courts/show.html.erb within layouts/application (80.3ms)
+Completed 200 OK in 93ms (Views: 84.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/courts/1/bookings" for 127.0.0.1 at Wed Jun 22 13:19:31 +0300 2011
+  Processing by BookingsController#create as HTML
+  Parameters: {"commit"=>"Create Booking", "authenticity_token"=>"FsorH7rEwBRf2O4JzBsBZP0n1DsvFTGagqW7jPBJ3m8=", "utf8"=>"✓", "date"=>{"minute"=>"19", "month"=>"6", "hour"=>"13", "day"=>"22", "year"=>"2011"}, "booking"=>{"booker"=>"lkjkljkl;jklj"}, "court_id"=>"1"}
+  [1m[36mCourt Load (0.2ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "bookings" ("from", "until", "created_at", "court_id", "updated_at", "booker") VALUES (NULL, NULL, '2011-06-22 10:19:31.871344', 1, '2011-06-22 10:19:31.871344', 'lkjkljkl;jklj')[0m
+Redirected to http://localhost:3000/courts/1
+Completed 302 Found in 44ms
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 13:19:31 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mBooking Load (0.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)[0m
+Rendered courts/show.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 92ms (Views: 31.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 13:24:33 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mBooking Load (0.3ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)[0m
+Rendered courts/show.html.erb within layouts/application (50.4ms)
+Completed 200 OK in 62ms (Views: 54.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 13:25:06 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mBooking Load (0.4ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)[0m
+Rendered courts/show.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 38ms (Views: 29.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/courts/1/bookings" for 127.0.0.1 at Wed Jun 22 13:25:09 +0300 2011
+  Processing by BookingsController#create as HTML
+  Parameters: {"commit"=>"Create Booking", "from"=>{"month"=>"6", "day"=>"22", "year"=>"2011"}, "authenticity_token"=>"FsorH7rEwBRf2O4JzBsBZP0n1DsvFTGagqW7jPBJ3m8=", "utf8"=>"✓", "booking"=>{"booker"=>""}, "court_id"=>"1", "until"=>{"month"=>"6", "day"=>"22", "year"=>"2011"}}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "bookings" ("court_id", "from", "until", "booker", "updated_at", "created_at") VALUES (1, NULL, NULL, '', '2011-06-22 10:25:09.797032', '2011-06-22 10:25:09.797032')
+Redirected to http://localhost:3000/courts/1
+Completed 302 Found in 23ms
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 13:25:09 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+  [1m[35mBooking Load (0.4ms)[0m  SELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)
+Rendered courts/show.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 37ms (Views: 29.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 13:25:31 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+  [1m[35mBooking Load (0.3ms)[0m  SELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)
+Rendered courts/show.html.erb within layouts/application (17.8ms)
+Completed 500 Internal Server Error in 76ms
+
+ActionView::Template::Error (undefined method `from' for :f:Symbol):
+    41:   </div>
+    42:   <div class="field">
+    43:     <%= f.label :from %><br />
+    44:     <%= select_date Date.today, :prefix => :f.from %>
+    45:   </div>
+    46:   <div class="field">
+    47:     <%= f.label :until %><br />
+  app/views/courts/show.html.erb:44:in `_app_views_courts_show_html_erb___1151859072_2187423020_0'
+  app/views/courts/show.html.erb:37:in `_app_views_courts_show_html_erb___1151859072_2187423020_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.6ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 13:27:09 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+  [1m[35mBooking Load (0.4ms)[0m  SELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)
+Rendered courts/show.html.erb within layouts/application (19.9ms)
+Completed 500 Internal Server Error in 32ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+    42:   <div class="field">
+    43:     <%= f.label :from %><br />
+    44:     <%= select_date Date.today, :prefix => :from %>
+    45:     <%= Date.civil(params[:start_date][:year].to_i, params[:start_date][:month].to_i, params[:start_date][:day].to_i) %>
+    46:   </div>
+    47:   <div class="field">
+    48:     <%= f.label :until %><br />
+  app/views/courts/show.html.erb:45:in `_app_views_courts_show_html_erb___1151859072_2187829520_0'
+  app/views/courts/show.html.erb:37:in `_app_views_courts_show_html_erb___1151859072_2187829520_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (52.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (58.1ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 13:27:43 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+  [1m[35mBooking Load (0.3ms)[0m  SELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)
+Rendered courts/show.html.erb within layouts/application (19.0ms)
+Completed 500 Internal Server Error in 30ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+    42:   <div class="field">
+    43:     <%= f.label :from %><br />
+    44:     <%= select_date Date.today, :prefix => :from %>
+    45:     <%= Date.civil(params[:from][:year].to_i, params[:from][:month].to_i, params[:from][:day].to_i) %>
+    46:   </div>
+    47:   <div class="field">
+    48:     <%= f.label :until %><br />
+  app/views/courts/show.html.erb:45:in `_app_views_courts_show_html_erb___1151859072_2188803860_0'
+  app/views/courts/show.html.erb:37:in `_app_views_courts_show_html_erb___1151859072_2188803860_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.3ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 13:29:20 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.2ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+  [1m[35mBooking Load (0.5ms)[0m  SELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)
+Rendered courts/show.html.erb within layouts/application (90.9ms)
+Completed 500 Internal Server Error in 105ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+    42:   <div class="field">
+    43:     <%= f.label :from %><br />
+    44:     <%= select_date Date.today, :prefix => :from %>
+    45:     <%= f.date Date.civil(params[:from][:year].to_i, params[:from][:month].to_i, params[:from][:day].to_i) %>
+    46:   </div>
+    47:   <div class="field">
+    48:     <%= f.label :until %><br />
+  app/views/courts/show.html.erb:45:in `_app_views_courts_show_html_erb___1151859072_2187408700_0'
+  app/views/courts/show.html.erb:37:in `_app_views_courts_show_html_erb___1151859072_2187408700_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.1ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 13:29:34 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+  [1m[35mBooking Load (0.4ms)[0m  SELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)
+Rendered courts/show.html.erb within layouts/application (19.8ms)
+Completed 500 Internal Server Error in 32ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+    42:   <div class="field">
+    43:     <%= f.label :from %><br />
+    44:     <%= select_date Date.today, :prefix => :from %>
+    45:     <%= f.text_field Date.civil(params[:from][:year].to_i, params[:from][:month].to_i, params[:from][:day].to_i) %>
+    46:   </div>
+    47:   <div class="field">
+    48:     <%= f.label :until %><br />
+  app/views/courts/show.html.erb:45:in `_app_views_courts_show_html_erb___1151859072_2187960600_0'
+  app/views/courts/show.html.erb:37:in `_app_views_courts_show_html_erb___1151859072_2187960600_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.6ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 13:31:10 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+  [1m[35mBooking Load (0.3ms)[0m  SELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)
+Rendered courts/show.html.erb within layouts/application (23.4ms)
+Completed 500 Internal Server Error in 35ms
+
+ActionView::Template::Error (undefined method `select_date' for #<ActionView::Helpers::FormBuilder:0x104e6f7d0>):
+    41:   </div>
+    42:   <div class="field">
+    43:     <%= f.label :from %><br />
+    44:     <%= f.select_date Date.today, :prefix => :from %>
+    45:   </div>
+    46:   <div class="field">
+    47:     <%= f.label :until %><br />
+  app/views/courts/show.html.erb:44:in `_app_views_courts_show_html_erb___1151859072_2189136940_0'
+  app/views/courts/show.html.erb:37:in `_app_views_courts_show_html_erb___1151859072_2189136940_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.4ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 13:33:19 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.2ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+  [1m[35mBooking Load (0.4ms)[0m  SELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)
+Rendered courts/show.html.erb within layouts/application (75.4ms)
+Completed 500 Internal Server Error in 95ms
+
+ActionView::Template::Error (undefined method `select_date' for #<ActionView::Helpers::FormBuilder:0x104fbc818>):
+    41:   </div>
+    42:   <div class="field">
+    43:     <%= f.label :from %><br />
+    44:     <%= f.select_date :date %>
+    45:   </div>
+    46:   <div class="field">
+    47:     <%= f.label :until %><br />
+  app/views/courts/show.html.erb:44:in `_app_views_courts_show_html_erb___1151859072_2187541740_0'
+  app/views/courts/show.html.erb:37:in `_app_views_courts_show_html_erb___1151859072_2187541740_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.9ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 13:44:51 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+  [1m[35mBooking Load (0.3ms)[0m  SELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)
+Rendered courts/show.html.erb within layouts/application (21.8ms)
+Completed 500 Internal Server Error in 34ms
+
+ActionView::Template::Error (undefined method `select_date' for #<ActionView::Helpers::FormBuilder:0x104c94208>):
+    41:   </div>
+    42:   <div class="field">
+    43:     <%= f.label :from %><br />
+    44:     <%= f.select_date Date.today, :prefix => :from %>
+    45:   </div>
+    46:   <div class="field">
+    47:     <%= f.label :until %><br />
+  app/views/courts/show.html.erb:44:in `_app_views_courts_show_html_erb___1151859072_2187930160_0'
+  app/views/courts/show.html.erb:37:in `_app_views_courts_show_html_erb___1151859072_2187930160_0'
+  app/controllers/courts_controller.rb:18:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (48.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (56.1ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 13:45:08 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+  [1m[35mBooking Load (0.3ms)[0m  SELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)
+Rendered courts/show.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 36ms (Views: 28.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/courts/1/bookings" for 127.0.0.1 at Wed Jun 22 13:45:12 +0300 2011
+  Processing by BookingsController#create as HTML
+  Parameters: {"commit"=>"Create Booking", "from"=>{"month"=>"6", "day"=>"22", "year"=>"2011"}, "authenticity_token"=>"FsorH7rEwBRf2O4JzBsBZP0n1DsvFTGagqW7jPBJ3m8=", "utf8"=>"✓", "booking"=>{"booker"=>"678678678678"}, "court_id"=>"1", "until"=>{"month"=>"6", "day"=>"22", "year"=>"2011"}}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "bookings" ("updated_at", "from", "booker", "until", "court_id", "created_at") VALUES ('2011-06-22 10:45:13.046331', NULL, '678678678678', NULL, 1, '2011-06-22 10:45:13.046331')[0m
+Redirected to http://localhost:3000/courts/1
+Completed 302 Found in 72ms
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 13:45:13 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mBooking Load (0.4ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)[0m
+Rendered courts/show.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 37ms (Views: 29.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/courts/1/bookings" for 127.0.0.1 at Wed Jun 22 13:46:31 +0300 2011
+  Processing by BookingsController#create as HTML
+  Parameters: {"commit"=>"Create Booking", "from"=>{"month"=>"6", "day"=>"22", "year"=>"2011"}, "authenticity_token"=>"FsorH7rEwBRf2O4JzBsBZP0n1DsvFTGagqW7jPBJ3m8=", "utf8"=>"✓", "booking"=>{"booker"=>"dffdsfs"}, "court_id"=>"1", "until"=>{"month"=>"6", "day"=>"22", "year"=>"2011"}}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "bookings" ("until", "from", "updated_at", "created_at", "court_id", "booker") VALUES (NULL, NULL, '2011-06-22 10:46:31.324783', '2011-06-22 10:46:31.324783', 1, 'dffdsfs')
+Redirected to http://localhost:3000/courts/1
+Completed 302 Found in 73ms
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 13:46:31 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.2ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+  [1m[35mBooking Load (0.6ms)[0m  SELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)
+Rendered courts/show.html.erb within layouts/application (34.1ms)
+Completed 200 OK in 52ms (Views: 42.3ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/courts/1/bookings" for 127.0.0.1 at Wed Jun 22 13:48:18 +0300 2011
+  Processing by BookingsController#create as HTML
+  Parameters: {"commit"=>"Create Booking", "from"=>{"month"=>"6", "day"=>"22", "year"=>"2011"}, "authenticity_token"=>"FsorH7rEwBRf2O4JzBsBZP0n1DsvFTGagqW7jPBJ3m8=", "utf8"=>"✓", "booking"=>{"booker"=>"uiyuiyuioyui"}, "court_id"=>"1", "until"=>{"month"=>"6", "day"=>"15", "year"=>"2011"}}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "bookings" ("court_id", "until", "updated_at", "created_at", "from", "booker") VALUES (1, NULL, '2011-06-22 10:48:18.400096', '2011-06-22 10:48:18.400096', NULL, 'uiyuiyuioyui')[0m
+Redirected to http://localhost:3000/courts/1
+Completed 302 Found in 22ms
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 13:48:18 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mBooking Load (0.4ms)[0m  [1mSELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)[0m
+Rendered courts/show.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 34ms (Views: 26.4ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/courts/1/bookings" for 127.0.0.1 at Wed Jun 22 13:48:36 +0300 2011
+  Processing by BookingsController#create as HTML
+  Parameters: {"commit"=>"Create Booking", "from"=>{"month"=>"6", "day"=>"21", "year"=>"2011"}, "authenticity_token"=>"FsorH7rEwBRf2O4JzBsBZP0n1DsvFTGagqW7jPBJ3m8=", "utf8"=>"✓", "booking"=>{"booker"=>"78978978978"}, "court_id"=>"1", "until"=>{"month"=>"6", "day"=>"24", "year"=>"2011"}}
+  [1m[35mCourt Load (0.1ms)[0m  SELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "bookings" ("updated_at", "booker", "created_at", "until", "from", "court_id") VALUES ('2011-06-22 10:48:36.277599', '78978978978', '2011-06-22 10:48:36.277599', NULL, NULL, 1)
+Redirected to http://localhost:3000/courts/1
+Completed 302 Found in 50ms
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 13:48:36 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+  [1m[35mBooking Load (0.6ms)[0m  SELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)
+Rendered courts/show.html.erb within layouts/application (79.1ms)
+Completed 200 OK in 114ms (Views: 83.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/courts/1" for 127.0.0.1 at Wed Jun 22 13:54:48 +0300 2011
+  Processing by CourtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourt Load (0.1ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+  [1m[35mBooking Load (0.4ms)[0m  SELECT "bookings".* FROM "bookings" WHERE ("bookings".court_id = 1)
+Rendered courts/show.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 40ms (Views: 31.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/courts/1/bookings" for 127.0.0.1 at Wed Jun 22 13:54:55 +0300 2011
+  Processing by BookingsController#create as HTML
+  Parameters: {"commit"=>"Create Booking", "from"=>{"month"=>"6", "day"=>"18", "year"=>"2011"}, "authenticity_token"=>"FsorH7rEwBRf2O4JzBsBZP0n1DsvFTGagqW7jPBJ3m8=", "utf8"=>"✓", "booking"=>{"booker"=>"99999999999"}, "court_id"=>"1", "until"=>{"month"=>"6", "day"=>"21", "year"=>"2011"}}
+  [1m[36mCourt Load (0.2ms)[0m  [1mSELECT "courts".* FROM "courts" WHERE "courts"."id" = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError (undefined method `from=' for nil:NilClass):
+  app/controllers/bookings_controller.rb:5:in `create'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.6ms)
